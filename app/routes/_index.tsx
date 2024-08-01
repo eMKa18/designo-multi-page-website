@@ -3,46 +3,41 @@ import type { MetaFunction } from "@remix-run/node";
 export const meta: MetaFunction = () => {
   return [
     { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    { name: "description", content: "Welcome to Remix!" }
   ];
 };
 
 export default function Index() {
   return (
-    <div className="font-sans p-4">
-      <h1 className="text-3xl">Welcome to Remix</h1>
-      <ul className="list-disc mt-4 pl-6 space-y-2">
-        <li>
-          <a
-            className="text-blue-700 underline visited:text-purple-900"
-            target="_blank"
-            href="https://remix.run/start/quickstart"
-            rel="noreferrer"
-          >
-            5m Quick Start
-          </a>
-        </li>
-        <li>
-          <a
-            className="text-blue-700 underline visited:text-purple-900"
-            target="_blank"
-            href="https://remix.run/start/tutorial"
-            rel="noreferrer"
-          >
-            30m Tutorial
-          </a>
-        </li>
-        <li>
-          <a
-            className="text-blue-700 underline visited:text-purple-900"
-            target="_blank"
-            href="https://remix.run/docs"
-            rel="noreferrer"
-          >
-            Remix Docs
-          </a>
-        </li>
-      </ul>
+    <div className="w-3/4 flex flex-col items-center mobile">
+      <div className="flex justify-center w-full pt-10 pb-10">
+        <nav className="flex justify-between items-center w-full border border-yellow-400">
+          <div className="border border-pink-400">
+            <img src="/public/shared/desktop/logo-dark.png" alt="Logo" />
+          </div>
+
+          <div className="flex items-center justify-between w-1/4 border border-red-700">
+            <div className="">Our company</div>
+            <div>Locations</div>
+            <div>Contact</div>
+          </div>
+        </nav>
+      </div>
+      <div className="w-full bg-red-400 rounded-md border border-red-400 flex flex-row">
+        <h1>Award-wining custom designs and digital branding solutions</h1>
+        <p>
+          With over 10 years in the industry, we are experienced in creating
+          fully responsive websites, app design, and engaging brand experiences.
+          Find out more about our services.
+        </p>
+        <img src="/public/home/desktop/image-hero-phone.png" alt="Hero phone" />
+        {/* CSS as a background? */}
+        <img
+          src="/public/home/desktop/bg-pattern-hero-home.svg"
+          alt="Background"
+        />
+        <button>Learn more</button>
+      </div>
     </div>
   );
 }
