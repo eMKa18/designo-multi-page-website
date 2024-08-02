@@ -22,17 +22,19 @@ export default function Index() {
           </div>
         </nav>
       </div>
-      <div className="w-full bg-red-400 rounded-xl grid grid-cols-3 relative min-h-[700px] bg-hero-pattern-home bg-no-repeat bg-right bg-contain">
-        <div className="font-sans font-bold text-white flex flex-col justify-around items-center p-10 col-span-2">
-          <h1 className="text-center">
+      <div className="w-full bg-accent rounded-xl grid grid-cols-3 relative min-h-[700px] bg-hero-pattern-home bg-no-repeat bg-right bg-contain">
+        <div className="font-sans font-bold text-white flex flex-col justify-around items-start p-[100px] col-span-2">
+          <h1 className="text-left text-7xl text-wrap -mb-4">
             Award-winning custom designs and digital branding solutions
           </h1>
-          <p className="text-center">
+          <p className="text-left text-wrap pr-[150px] -mb-4">
             With over 10 years in the industry, we are experienced in creating
             fully responsive websites, app design, and engaging brand
             experiences. Find out more about our services.
           </p>
-          <button className="border border-black">Learn more</button>
+          <button className="bg-white text-black rounded-md py-4 px-8">
+            Learn more
+          </button>
         </div>
         <div className="relative flex justify-center items-center overflow-visible">
           <div className="h-full w-full rounded-xl overflow-hidden relative">
