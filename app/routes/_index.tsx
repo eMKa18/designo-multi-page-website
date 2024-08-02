@@ -13,7 +13,7 @@ export default function Index() {
       <div className="flex justify-center w-full pt-10 pb-10">
         <nav className="flex justify-between items-center w-full border border-yellow-400">
           <div className="border border-pink-400">
-            <img src="/public/shared/desktop/logo-dark.png" alt="Logo" />
+            <img src="./shared/desktop/logo-dark.png" alt="Logo" />
           </div>
 
           <div className="flex items-center justify-between w-1/4 border border-red-700">
@@ -34,9 +34,9 @@ export default function Index() {
           <button>Learn more</button>
         </div>
         <div>
-          <img src="/home/desktop/image-hero-phone.png" alt="Hero phone" />
+          <img src="./home/desktop/image-hero-phone.png" alt="Hero phone" />
           {/* CSS as a background? */}
-          <img src="/home/desktop/bg-pattern-hero-home.svg" alt="Background" />
+          <img src="./home/desktop/bg-pattern-hero-home.svg" alt="Background" />
         </div>
       </div>
     </div>
