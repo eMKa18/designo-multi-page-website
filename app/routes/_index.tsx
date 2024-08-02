@@ -9,7 +9,7 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div className="w-[80%] flex flex-col items-center mobile">
+    <div className="lg:w-[80%] md:w-[90%] w-full flex flex-col items-center mobile">
       <div className="flex justify-center w-full pt-10 pb-10">
         <nav className="flex justify-between items-center w-full">
           <div className="">
@@ -17,29 +17,29 @@ export default function Index() {
           </div>
           <div className="flex items-center justify-between w-1/4">
             <div className="">Our company</div>
-            <div>Locations</div>
-            <div>Contact</div>
+            <div className="">Locations</div>
+            <div className="">Contact</div>
           </div>
         </nav>
       </div>
-      <div className="w-full bg-accent rounded-xl grid grid-cols-3 relative min-h-[700px] bg-hero-pattern-home bg-no-repeat bg-right bg-contain">
-        <div className="font-sans font-bold text-white flex flex-col justify-around items-start p-[100px] col-span-2">
-          <h1 className="text-left text-7xl text-wrap -mb-4">
+      <div className="w-full bg-accent rounded-xl grid xl:grid-cols-3 relative xl:min-h-[700px] bg-hero-pattern-home bg-no-repeat xl:bg-right xl:bg-contain bg-auto">
+        <div className="font-sans font-bold text-white flex flex-col justify-around lg:items-start items-center xl:p-[100px] md:p-24 p-16 xl:col-span-2">
+          <h1 className="text-left lg:text-7xl text-4xl text-wrap xl:-mb-4.5 lg:mb-2 mb-4">
             Award-winning custom designs and digital branding solutions
           </h1>
-          <p className="text-left text-wrap pr-[150px] -mb-4">
+          <p className="text-left text-wrap lg:pr-[150px] xl:-mb-4.5 lg:mb-2 mb-4">
             With over 10 years in the industry, we are experienced in creating
             fully responsive websites, app design, and engaging brand
             experiences. Find out more about our services.
           </p>
-          <button className="bg-white text-black rounded-md py-4 px-8">
+          <button className="bg-white text-black xl:rounded-md rounded py-4 px-8">
             Learn more
           </button>
         </div>
-        <div className="relative flex justify-center items-center overflow-visible">
+        <div className="relative justify-center items-center overflow-visible">
           <div className="h-full w-full rounded-xl overflow-hidden relative">
             <img
-              className="absolute bottom-[-300px] left-[100px] transform scale-150 origin-bottom-right"
+              className="absolute bottom-[-300px] left-[90px] xl:scale-150 origin-bottom-right scale-.5"
               src="./home/desktop/image-hero-phone.png"
               alt="Hero phone"
             />
