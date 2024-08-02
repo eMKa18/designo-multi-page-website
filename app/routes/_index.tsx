@@ -37,13 +37,9 @@ export default function Index() {
         <div className="relative flex justify-center items-center overflow-visible">
           <div className="h-full w-full rounded-xl overflow-hidden relative">
             <img
-              className="absolute bottom-[-300px] left-[100px]"
+              className="absolute bottom-[-300px] left-[100px] transform scale-150 origin-bottom-right"
               src="./home/desktop/image-hero-phone.png"
               alt="Hero phone"
-              style={{
-                transform: "scale(1.5)",
-                transformOrigin: "bottom right"
-              }}
             />
           </div>
         </div>
