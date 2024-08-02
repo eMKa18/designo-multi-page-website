@@ -33,10 +33,10 @@ export default function Index() {
           </p>
           <button>Learn more</button>
         </div>
-        <div>
-          <img src="./home/desktop/image-hero-phone.png" alt="Hero phone" />
-          {/* CSS as a background? */}
-          <img src="./home/desktop/bg-pattern-hero-home.svg" alt="Background" />
+        <div className="h-1/2">
+          <div className="bg-hero-pattern-home">
+            <img src="./home/desktop/image-hero-phone.png" alt="Hero phone" />
+          </div>
         </div>
       </div>
     </div>
