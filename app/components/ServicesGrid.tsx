@@ -31,7 +31,14 @@ const ServicesGrid = ({
                 <div className="absolute inset-0 text-center flex flex-col items-center justify-center text-white uppercase">
                   <h2 className="text-2xl font-bold">{service.name}</h2>
                   <Link to={service.route} className="text-md">
-                    View projects
+                    <div className="flex flex-row">
+                      View projects
+                      <img
+                        className="m-auto ml-2"
+                        src="./shared/desktop/icon-right-arrow.svg"
+                        alt="Arrow"
+                      />
+                    </div>
                   </Link>
                 </div>
               </div>
@@ -48,7 +55,14 @@ const ServicesGrid = ({
                 <div className="absolute inset-0 text-center flex flex-col items-center justify-center text-white uppercase">
                   <h2 className="text-2xl font-bold">{service.name}</h2>
                   <Link to={service.route} className="text-md">
-                    View projects
+                    <div className="flex flex-row">
+                      View projects
+                      <img
+                        className="m-auto ml-2"
+                        src="./shared/desktop/icon-right-arrow.svg"
+                        alt="Arrow"
+                      />
+                    </div>
                   </Link>
                 </div>
               </div>
