@@ -21,7 +21,7 @@ const AwardPlague = () => {
           />
         </div>
       </div>
-      <div className="relative flex justify-center items-center overflow-hidden hidden xl:flex xl:col-span-1">
+      <div className="relative justify-center items-center overflow-hidden hidden xl:flex xl:col-span-1">
         <div className="h-full w-full rounded-xl overflow-hidden relative">
           <img
             className="absolute xl:-bottom-24 lg:-bottom-20 left-1/2 transform -translate-x-1/2 scale-50 md:scale-75 lg:scale-100 xl:scale-125"
