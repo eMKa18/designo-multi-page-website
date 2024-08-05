@@ -12,7 +12,7 @@ const ServicesGrid = ({
 }) => {
   return (
     <>
-      <div className="grid xl:grid-cols-2 xl:grid-rows-2 grid-cols-1 my-28 gap-6">
+      <div className="grid xl:grid-cols-2 xl:grid-rows-2 grid-cols-1 w-auto my-28 gap-6">
         {services.map((service, index) => {
           if (index === 0)
             return (
