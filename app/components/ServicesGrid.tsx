@@ -38,11 +38,15 @@ const Service = ({
       )}
       <div className="absolute inset-0 bg-black bg-opacity-30 rounded-xl"></div>
       <div className="absolute inset-0 text-center flex flex-col items-center justify-center text-white uppercase">
-        <Link to={service.route} className="text-md">
+        <Link to={service.route} className="text-md group">
           <h2 className="text-2xl font-bold">{service.name}</h2>
           <div className="flex flex-row">
             <p className="mx-auto">View projects</p>
-            <img className="my-auto mx-auto" src={rightArrow} alt="Arrow" />
+            <img
+              className="my-auto mx-auto group-hover:animate-moveRight"
+              src={rightArrow}
+              alt="Arrow"
+            />
           </div>
         </Link>
       </div>

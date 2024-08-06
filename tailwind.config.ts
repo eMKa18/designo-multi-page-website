@@ -18,6 +18,27 @@ export default {
           "url('/shared/desktop/bg-pattern-two-circles.svg')",
         "hero-pattern-call-to-action":
           "url('/shared/desktop/bg-pattern-call-to-action.svg')"
+      },
+      keyframes: {
+        moveRight: {
+          "0%, 100%": { transform: "translateX(0)" },
+          "50%": { transform: "translateX(100%)" }
+        },
+        moveLeft: {
+          "0%, 100%": { transform: "translateX(0)" },
+          "50%": { transform: "translateX(-100%)" }
+        },
+        moveAndDisappear: {
+          "0%": { transform: "translateX(0)", opacity: "1" },
+          "50%": { transform: "translateX(100%)", opacity: "0" },
+          "51%": { transform: "translateX(-100%)", opacity: "0" },
+          "100%": { transform: "translateX(0)", opacity: "1" }
+        }
+      },
+      animation: {
+        moveRight: "moveRight 1s ease-in-out infinite",
+        moveLeft: "moveLeft 1s ease-in-out infinite",
+        moveAndDisappear: "moveAndDisappear 2s ease-in-out infinite"
       }
     }
   },
