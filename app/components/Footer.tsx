@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <div className="text-center bg-black -mt-16 z-20 pt-36 pb-36">
-      <div className="w-[80%] mx-auto">
+      <div className="md:w-[80%] mx-auto">
         <div className="flex justify-between items-center">
           <img
             className="scale-75 -ml-12"
@@ -15,7 +15,7 @@ const Footer = () => {
           </div>
         </div>
         <hr className="text-white opacity-20 my-8" />
-        <div className="text-gray-400 grid md:grid-cols-3 grid-cols-1 text-left">
+        <div className="text-gray-400 grid md:grid-cols-3 grid-cols-1 md:text-left text-center">
           <div className="md:my-0 my-1">
             <h6 className="font-bold">Designo Central Office</h6>
             <p>3886 Wellington Street</p>
@@ -28,7 +28,7 @@ const Footer = () => {
               <p>M : contact@designo.co</p>
             </div>
           </div>
-          <div className="grid grid-cols-5 gap-4 md:ml-auto md:mt-auto mt-2 md:mx-0 mx-auto ml-0">
+          <div className="grid grid-cols-5 gap-4 md:ml-auto md:mt-auto mt-2 md:mx-0 mx-auto">
             <img src="./shared/desktop/icon-facebook.svg" alt="Facebook" />
             <img src="./shared/desktop/icon-youtube.svg" alt="YouTube" />
             <img src="./shared/desktop/icon-twitter.svg" alt="Twitter" />

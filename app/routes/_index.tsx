@@ -51,9 +51,11 @@ export default function Index() {
           </nav>
         </div>
         <div className="bg-hero-pattern-leaf bg-repeat-space bg-right">
-          <AwardPlague />
-          <ServicesGrid services={services} />
-          <OurAttributes />
+          <div className="">
+            <AwardPlague />
+            <ServicesGrid services={services} />
+            <OurAttributes />
+          </div>
           <LetsTalk />
         </div>
       </div>
