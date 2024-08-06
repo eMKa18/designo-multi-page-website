@@ -21,7 +21,7 @@ const OurAttributes = () => {
   ];
 
   return (
-    <div className="xl:w-full grid grid-cols-1 xl:grid-cols-3 text-center mb-6">
+    <div className="xl:w-full grid grid-cols-1 xl:grid-cols-3 text-center mb-6 ">
       {attributes.map((attribute) => (
         <div
           key={attribute.name}

@@ -2,7 +2,7 @@ import { Link } from "@remix-run/react";
 
 const LetsTalk = () => {
   return (
-    <div className="text-center w-full bg-accent rounded-xl bg-hero-pattern-home bg-repeat bg-contain grid xl:grid-cols-2 grid-cols-1 xl:p-24 p-14 mt-4 gap-4 z-20">
+    <div className="text-center w-full bg-accent rounded-xl bg-hero-pattern-call-to-action bg-no-repeat bg-right grid xl:grid-cols-2 grid-cols-1 xl:p-24 p-14 mt-4 gap-4 z-20">
       <div className="text-white xl:text-left text-center grid grid-cols-1 gap-1">
         <h2 className="font-bold xl:text-4xl text-3xl break-words w-full">
           Let’s talk about your project
