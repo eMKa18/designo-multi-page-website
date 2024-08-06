@@ -5,7 +5,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        accent: "#e7816b"
+        accent: "#e7816b",
+        "accent-light": "#fdf3f1"
       },
       backgroundImage: {
         "hero-pattern-home": "url('/home/desktop/bg-pattern-hero-home.svg')",
