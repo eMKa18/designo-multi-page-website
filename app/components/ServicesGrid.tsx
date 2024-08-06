@@ -38,11 +38,11 @@ const Service = ({
       )}
       <div className="absolute inset-0 bg-black bg-opacity-30 rounded-xl"></div>
       <div className="absolute inset-0 text-center flex flex-col items-center justify-center text-white uppercase">
-        <h2 className="text-2xl font-bold">{service.name}</h2>
         <Link to={service.route} className="text-md">
+          <h2 className="text-2xl font-bold">{service.name}</h2>
           <div className="flex flex-row">
-            View projects
-            <img className="m-auto ml-2" src={rightArrow} alt="Arrow" />
+            <p className="mx-auto">View projects</p>
+            <img className="my-auto mx-auto" src={rightArrow} alt="Arrow" />
           </div>
         </Link>
       </div>
