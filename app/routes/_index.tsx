@@ -37,7 +37,7 @@ export default function Index() {
   return (
     <div>
       <AwardPlague />
-      <ServicesGrid services={services} />
+      <ServicesGrid services={services} large />
       <OurAttributes />
     </div>
   );
