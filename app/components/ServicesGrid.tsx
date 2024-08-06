@@ -56,7 +56,7 @@ const Service = ({
 
 const ServicesGrid = ({
   services,
-  large
+  twoRows
 }: {
   services: Array<{
     name: string;
@@ -64,19 +64,19 @@ const ServicesGrid = ({
     image: string;
     mobileImage?: string;
   }>;
-  large?: boolean;
+  twoRows?: boolean;
 }) => {
   return (
     <div className="">
       <div
         className={`grid xl:grid-cols-2 ${
-          large ? "xl:grid-rows-2" : ""
+          twoRows ? "xl:grid-rows-2" : ""
         } grid-cols-1 w-auto my-28 gap-6`}
       >
         {services.map((service, index) => (
           <Service
             service={service}
-            useLarge={index === 0}
+            useLarge={twoRows && index === 0}
             key={service.name}
           />
         ))}

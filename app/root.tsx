@@ -5,9 +5,10 @@ import {
   Scripts,
   ScrollRestoration
 } from "@remix-run/react";
-import "./tailwind.css";
-import { LetsTalk } from "./components/LetsTalk";
 import { Footer } from "./components/Footer";
+import { LetsTalk } from "./components/LetsTalk";
+import "./tailwind.css";
+
 import logoDark from "/shared/desktop/logo-dark.png";
 
 export function Layout({ children }: { children: React.ReactNode }) {

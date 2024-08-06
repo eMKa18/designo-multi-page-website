@@ -1,12 +1,9 @@
 import type { MetaFunction } from "@remix-run/node";
+import { useEffect, useState } from "react";
 import { AwardPlague } from "~/components/AwardPlague";
 import { OurAttributes } from "~/components/OurAttributes";
 import { ServicesGrid } from "~/components/ServicesGrid";
-
-import webDesign from "/home/desktop/image-web-design-large.jpg";
-import webDesignSmall from "/home/desktop/image-web-design-small.jpg";
-import appDesign from "/home/desktop/image-app-design.jpg";
-import graphicDesign from "/home/desktop/image-graphic-design.jpg";
+import { getServices, ServiceType } from "~/data/services";
 
 export const meta: MetaFunction = () => {
   return [
@@ -16,28 +13,15 @@ export const meta: MetaFunction = () => {
 };
 
 export default function Index() {
-  const services = [
-    {
-      name: "Web Design",
-      route: "services/web-design",
-      image: webDesign,
-      mobileImage: webDesignSmall
-    },
-    {
-      name: "App Design",
-      route: "services/app-desgin",
-      image: appDesign
-    },
-    {
-      name: "Graphic Design",
-      route: "services/graphic-design",
-      image: graphicDesign
-    }
-  ];
+  const [services, setServices]: [services: ServiceType[], setServices: any] =
+    useState([]);
+  useEffect(() => {
+    setServices(getServices());
+  }, []);
   return (
     <div>
       <AwardPlague />
-      <ServicesGrid services={services} large />
+      <ServicesGrid services={services} twoRows />
       <OurAttributes />
     </div>
   );

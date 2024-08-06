@@ -1,4 +1,4 @@
-import { ProjectRepresentation } from "~/routes/services.web-design";
+import { ProjectRepresentation } from "~/data/projects";
 
 const ProjectsGrid = ({
   projects
