@@ -17,7 +17,9 @@ export default {
         "hero-pattern-two-circles":
           "url('/shared/desktop/bg-pattern-two-circles.svg')",
         "hero-pattern-call-to-action":
-          "url('/shared/desktop/bg-pattern-call-to-action.svg')"
+          "url('/shared/desktop/bg-pattern-call-to-action.svg')",
+        "hero-pattern-intro-web":
+          "url('/web-design/desktop/bg-pattern-intro-web.svg')"
       },
       keyframes: {
         moveRight: {
