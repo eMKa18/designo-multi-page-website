@@ -7,6 +7,9 @@ import photonImg from "/web-design/desktop/image-photon.jpg";
 import builderImg from "/web-design/desktop/image-builder.jpg";
 import blogrImg from "/web-design/desktop/image-blogr.jpg";
 import campImg from "/web-design/desktop/image-camp.jpg";
+import appDesign from "/home/desktop/image-app-design.jpg";
+import graphicDesign from "/home/desktop/image-graphic-design.jpg";
+import { ServicesGrid } from "~/components/ServicesGrid";
 
 export type ProjectRepresentation = {
   name: string;
@@ -53,6 +56,19 @@ const WebDesign = () => {
     }
   ];
 
+  const services = [
+    {
+      name: "App Design",
+      route: "services/app-desgin",
+      image: appDesign
+    },
+    {
+      name: "Graphic Design",
+      route: "services/graphic-design",
+      image: graphicDesign
+    }
+  ];
+
   return (
     <div className="w-full">
       <ServiceIntro
@@ -61,6 +77,7 @@ const WebDesign = () => {
         memorable brand experiences."
       />
       <ProjectsGrid projects={projects} />
+      <ServicesGrid services={services} />
     </div>
   );
 };
