@@ -11,19 +11,19 @@ const ServicesGrid = ({
   }>;
 }) => {
   return (
-    <>
+    <div className="">
       <div className="grid xl:grid-cols-2 xl:grid-rows-2 grid-cols-1 w-auto my-28 gap-6">
         {services.map((service, index) => {
           if (index === 0)
             return (
               <div className="xl:row-span-2 relative">
                 <img
-                  className="rounded-xl object-cover sm:hidden xl:block"
+                  className="rounded-xl object-cover hidden xl:block w-full h-full"
                   src={service.image}
                   alt={service.name}
                 />
                 <img
-                  className="rounded-xl object-cover xl:hidden"
+                  className="rounded-xl object-cover block xl:hidden w-full h-full"
                   src={service.mobileImage}
                   alt={service.name}
                 />
@@ -47,7 +47,7 @@ const ServicesGrid = ({
             return (
               <div className="relative">
                 <img
-                  className="rounded-xl object-cover"
+                  className="rounded-xl object-cover w-full h-full"
                   src={service.image}
                   alt={service.name}
                 />
@@ -69,7 +69,7 @@ const ServicesGrid = ({
             );
         })}
       </div>
-    </>
+    </div>
   );
 };
 

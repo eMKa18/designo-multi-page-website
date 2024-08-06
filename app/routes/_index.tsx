@@ -33,7 +33,7 @@ export default function Index() {
   ];
   return (
     <div>
-      <div className="lg:w-[80%] md:w-[90%] w-full flex flex-col items-center mobile mx-auto bg-hero-pattern-leaf bg-repeat-space bg-right">
+      <div className="lg:w-[80%] md:w-[90%] w-full flex flex-col items-center mx-auto">
         <div className="flex justify-center w-full pt-10 pb-10">
           <nav className="flex justify-between items-center w-full">
             <div>
@@ -50,10 +50,12 @@ export default function Index() {
             </div>
           </nav>
         </div>
-        <AwardPlague />
-        <ServicesGrid services={services} />
-        <OurAttributes />
-        <LetsTalk />
+        <div className="bg-hero-pattern-leaf bg-repeat-space bg-right">
+          <AwardPlague />
+          <ServicesGrid services={services} />
+          <OurAttributes />
+          <LetsTalk />
+        </div>
       </div>
       <Footer />
     </div>
