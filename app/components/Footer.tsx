@@ -1,13 +1,16 @@
+import logoLight from "/shared/desktop/logo-light.png";
+import facebookLogo from "/shared/desktop/icon-facebook.svg";
+import youtubeLogo from "/shared/desktop/icon-youtube.svg";
+import twitterLogo from "/shared/desktop/icon-twitter.svg";
+import pinterestLogo from "/shared/desktop/icon-pinterest.svg";
+import instagramLogo from "/shared/desktop/icon-instagram.svg";
+
 const Footer = () => {
   return (
     <div className="text-center bg-black -mt-16 z-20 pt-36 pb-36">
       <div className="md:w-[80%] mx-auto">
         <div className="flex justify-between items-center">
-          <img
-            className="scale-75 -ml-12"
-            src="./shared/desktop/logo-light.png"
-            alt="Logo"
-          />
+          <img className="scale-75 -ml-12" src={logoLight} alt="Logo" />
           <div className="flex items-center justify-between w-1/4 uppercase text-sm tracking-wider text-white">
             <div>Our company</div>
             <div>Locations</div>
@@ -29,11 +32,11 @@ const Footer = () => {
             </div>
           </div>
           <div className="grid grid-cols-5 gap-4 md:ml-auto md:mt-auto mt-2 md:mx-0 mx-auto">
-            <img src="./shared/desktop/icon-facebook.svg" alt="Facebook" />
-            <img src="./shared/desktop/icon-youtube.svg" alt="YouTube" />
-            <img src="./shared/desktop/icon-twitter.svg" alt="Twitter" />
-            <img src="./shared/desktop/icon-pinterest.svg" alt="Pinterest" />
-            <img src="./shared/desktop/icon-instagram.svg" alt="Instagram" />
+            <img src={facebookLogo} alt="Facebook" />
+            <img src={youtubeLogo} alt="YouTube" />
+            <img src={twitterLogo} alt="Twitter" />
+            <img src={pinterestLogo} alt="Pinterest" />
+            <img src={instagramLogo} alt="Instagram" />
           </div>
         </div>
       </div>

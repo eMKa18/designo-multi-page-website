@@ -1,3 +1,5 @@
+import heroPhone from "/home/desktop/image-hero-phone.png";
+
 const AwardPlague = () => {
   return (
     <div className="w-full bg-accent rounded-xl grid xl:grid-cols-3 relative xl:min-h-[700px] bg-hero-pattern-home bg-no-repeat xl:bg-right xl:bg-contain bg-auto min-h-[700px]">
@@ -16,7 +18,7 @@ const AwardPlague = () => {
         <div className="relative w-full flex justify-center items-center xl:hidden">
           <img
             className="scale-50 md:scale-75 lg:scale-100 lg:-bottom-[600px] md:-bottom-[500px] -bottom-[350px] absolute"
-            src="./home/desktop/image-hero-phone.png"
+            src={heroPhone}
             alt="Hero phone"
           />
         </div>
@@ -25,7 +27,7 @@ const AwardPlague = () => {
         <div className="h-full w-full rounded-xl overflow-hidden relative">
           <img
             className="absolute xl:-bottom-24 lg:-bottom-20 left-1/2 transform -translate-x-1/2 scale-50 md:scale-75 lg:scale-100 xl:scale-125"
-            src="./home/desktop/image-hero-phone.png"
+            src={heroPhone}
             alt="Hero phone"
           />
         </div>

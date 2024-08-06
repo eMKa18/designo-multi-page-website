@@ -16,7 +16,7 @@ const ServicesGrid = ({
         {services.map((service, index) => {
           if (index === 0)
             return (
-              <div className="xl:row-span-2 relative">
+              <div className="xl:row-span-2 relative" key={service.name}>
                 <img
                   className="rounded-xl object-cover hidden xl:block w-full h-full"
                   src={service.image}
@@ -45,7 +45,7 @@ const ServicesGrid = ({
             );
           else
             return (
-              <div className="relative">
+              <div className="relative" key={service.name}>
                 <img
                   className="rounded-xl object-cover w-full h-full"
                   src={service.image}

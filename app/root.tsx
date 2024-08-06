@@ -3,9 +3,12 @@ import {
   Meta,
   Outlet,
   Scripts,
-  ScrollRestoration,
+  ScrollRestoration
 } from "@remix-run/react";
 import "./tailwind.css";
+import { LetsTalk } from "./components/LetsTalk";
+import { Footer } from "./components/Footer";
+import logoDark from "/shared/desktop/logo-dark.png";
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -26,5 +29,29 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-  return <Outlet />;
+  return (
+    <div>
+      <div className="lg:w-[80%] md:w-[90%] w-full flex flex-col items-center mx-auto">
+        <div className="flex justify-center w-full pt-10 pb-10">
+          <nav className="flex justify-between items-center w-full">
+            <div>
+              <img className="scale-75" src={logoDark} alt="Logo" />
+            </div>
+            <div className="flex items-center justify-between w-1/4 uppercase text-sm tracking-wider">
+              <div>Our company</div>
+              <div>Locations</div>
+              <div>Contact</div>
+            </div>
+          </nav>
+        </div>
+        <div className="bg-hero-pattern-leaf bg-repeat-space bg-right">
+          <div className="">
+            <Outlet />
+          </div>
+          <LetsTalk />
+        </div>
+      </div>
+      <Footer />
+    </div>
+  );
 }
