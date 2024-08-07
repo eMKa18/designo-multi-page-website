@@ -1,4 +1,5 @@
 import {
+  Link,
   Links,
   Meta,
   Outlet,
@@ -36,7 +37,9 @@ export default function App() {
         <div className="flex justify-center w-full pt-10 pb-10">
           <nav className="flex justify-between items-center w-full">
             <div>
-              <img className="scale-75" src={logoDark} alt="Logo" />
+              <Link to={"/"}>
+                <img className="scale-75" src={logoDark} alt="Logo" />
+              </Link>
             </div>
             <div className="flex items-center justify-between w-1/4 uppercase text-sm tracking-wider">
               <div>Our company</div>

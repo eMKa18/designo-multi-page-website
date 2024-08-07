@@ -4,13 +4,16 @@ import youtubeLogo from "/shared/desktop/icon-youtube.svg";
 import twitterLogo from "/shared/desktop/icon-twitter.svg";
 import pinterestLogo from "/shared/desktop/icon-pinterest.svg";
 import instagramLogo from "/shared/desktop/icon-instagram.svg";
+import { Link } from "@remix-run/react";
 
 const Footer = () => {
   return (
     <div className="text-center bg-black -mt-16 z-20 pt-36 pb-36">
       <div className="md:w-[80%] mx-auto">
         <div className="flex justify-between items-center">
-          <img className="scale-75 -ml-12" src={logoLight} alt="Logo" />
+          <Link to={"/"}>
+            <img className="scale-75 -ml-12" src={logoLight} alt="Logo" />
+          </Link>
           <div className="flex items-center justify-between w-1/4 uppercase text-sm tracking-wider text-white">
             <div>Our company</div>
             <div>Locations</div>
