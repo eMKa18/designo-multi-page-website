@@ -23,7 +23,7 @@ const services: Array<ServiceType> = [
   {
     key: "app-design",
     name: "App Design",
-    route: "/services/app-desgin",
+    route: "/services/app-design",
     image: appDesign
   },
   {
@@ -40,7 +40,7 @@ const getServices = (key?: PageKey) => {
 };
 
 const getService = (key: PageKey) => {
-  if (!key) return { name: "" };
+  if (!key) return { name: "", key: "", route: "", image: "" };
   const service = services.find((service) => service.key === key);
   return !service
     ? ({ name: "", key: "", route: "", image: "" } as ServiceType)
