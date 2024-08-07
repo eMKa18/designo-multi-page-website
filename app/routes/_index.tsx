@@ -1,6 +1,6 @@
 import type { MetaFunction } from "@remix-run/node";
 import { useEffect, useState } from "react";
-import { AwardPlague } from "~/components/AwardPlague";
+import { AwardIntro } from "~/components/AwardIntro";
 import { OurAttributes } from "~/components/OurAttributes";
 import { ServicesGrid } from "~/components/ServicesGrid";
 import { getServices, ServiceType } from "~/data/services";
@@ -20,7 +20,7 @@ export default function Index() {
   }, []);
   return (
     <div>
-      <AwardPlague />
+      <AwardIntro />
       <ServicesGrid services={services} twoRows />
       <OurAttributes />
     </div>

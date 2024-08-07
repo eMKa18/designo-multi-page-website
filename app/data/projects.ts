@@ -21,6 +21,8 @@ export type ProjectRepresentation = {
   image: string;
 };
 
+export type Projects = Array<ProjectRepresentation>;
+
 export type PageKey = "web-design" | "app-design" | "graphic-design";
 
 const projects: { [K in PageKey]: { projects: Array<ProjectRepresentation> } } =

@@ -1,10 +1,6 @@
-import { ProjectRepresentation } from "~/data/projects";
+import { ProjectRepresentation, Projects } from "~/data/projects";
 
-const ProjectsGrid = ({
-  projects
-}: {
-  projects: Array<ProjectRepresentation>;
-}) => {
+const ProjectsGrid = ({ projects }: { projects: Projects }) => {
   return (
     <div className="w-full my-8 grid xl:grid-cols-3 grid-cols-1 gap-8">
       {projects.map((project) => (
