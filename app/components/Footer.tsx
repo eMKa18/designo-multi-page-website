@@ -15,7 +15,9 @@ const Footer = () => {
             <img className="scale-75 -ml-12" src={logoLight} alt="Logo" />
           </Link>
           <div className="flex items-center justify-between w-1/4 uppercase text-sm tracking-wider text-white">
-            <div>Our company</div>
+            <Link to={"/about"}>
+              <span>Our company</span>
+            </Link>
             <div>Locations</div>
             <div>Contact</div>
           </div>

@@ -42,7 +42,9 @@ export default function App() {
               </Link>
             </div>
             <div className="flex items-center justify-between w-1/4 uppercase text-sm tracking-wider">
-              <div>Our company</div>
+              <Link to={"/about"}>
+                <span>Our company</span>
+              </Link>
               <div>Locations</div>
               <div>Contact</div>
             </div>
