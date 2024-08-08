@@ -22,7 +22,9 @@ export default {
         "hero-pattern-intro-web":
           "url('/web-design/desktop/bg-pattern-intro-web.svg')",
         "hero-pattern-about":
-          "url('/about/desktop/bg-pattern-hero-about-desktop.svg')"
+          "url('/about/desktop/bg-pattern-hero-about-desktop.svg')",
+        "hero-pattern-contact":
+          "url('/contact/desktop/bg-pattern-hero-desktop.svg')"
       },
       keyframes: {
         moveRight: {
