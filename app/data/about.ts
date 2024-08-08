@@ -1,6 +1,10 @@
 import worldClassTalentImg from "/about/desktop/image-world-class-talent.jpg";
 import realDealImg from "/about/desktop/image-real-deal.jpg";
 
+import australiaIllustrationImg from "/shared/desktop/illustration-australia.svg";
+import canadaIllustrationImg from "/shared/desktop/illustration-canada.svg";
+import ukIllustrationImg from "/shared/desktop/illustration-united-kingdom.svg";
+
 export type Header = {
   title: string;
   description: string;
@@ -17,9 +21,19 @@ export type Talent = {
 
 export type Talents = Array<Talent>;
 
+export type LocationSmall = {
+  country: string;
+  image: string;
+  cta: "See location";
+  route: string;
+};
+
+export type LocationsSmall = Array<LocationSmall>;
+
 export type AboutCompanyType = {
   header: Header;
   talents: Talents;
+  locations: LocationsSmall;
 };
 
 const about: AboutCompanyType = {
@@ -44,6 +58,26 @@ const about: AboutCompanyType = {
         "We are visual storytellers in appealing and captivating ways. By combining business and marketing strategies, we inspire audiences to take action and drive real results."
       ],
       image: realDealImg
+    }
+  ],
+  locations: [
+    {
+      country: "Canada",
+      image: canadaIllustrationImg,
+      cta: "See location",
+      route: "/"
+    },
+    {
+      country: "Australia",
+      image: australiaIllustrationImg,
+      cta: "See location",
+      route: "/"
+    },
+    {
+      country: "United Kingdom",
+      image: ukIllustrationImg,
+      cta: "See location",
+      route: "/"
     }
   ]
 };
